@@ -23,17 +23,19 @@ $(function() {
         name: $("#br").val().trim(),
         devoured: false
       };
+      console.log(newBurger);
   
       // Send the POST request.
       $.ajax("/api/burgers/", {
         type: "POST",
         data: newBurger
       }).then(
-        function() {
-          console.log("Burger Ready!");
-          location.reload();
-        }
-      );
+        location.reload());
+        // function() {
+        //   console.log("Burger Ready!");
+        //   location.reload();
+        // }
+      
     });
   });
   
