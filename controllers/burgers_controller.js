@@ -20,8 +20,7 @@ router.get("/", function(req, res) {
   
   router.put("/api/burgers/:id", function(req, res) {
     console.log("eating Burger #" + req.params.id);
-    cat.update({devoured: true},
-      condition,
+    burger.updateOne(req.params.id,
       function(result) {
           //make sure this actually changes something before saying it went well.
         if (result.changedRows === 0) {

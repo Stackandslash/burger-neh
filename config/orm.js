@@ -12,7 +12,7 @@ var orm = {
     },
     //Inserting a new burger, with the vals variable for type and devouredness
     insertOne: function(vals, cb) {
-      var queryString = "INSERT INTO burgers (burger_name, devoured) VALUES (?, ?)";
+      var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
       console.log(queryString);
       connection.query(queryString, vals, function(err, result) {
         if (err) throw err;
