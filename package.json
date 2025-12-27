@@ -19,9 +19,8 @@
   },
   "homepage": "https://github.com/Stackandslash/burger-neh#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.4",
     "mysql": "^2.18.1"
-  },
-  "devDependencies": {}
+  }
 }
